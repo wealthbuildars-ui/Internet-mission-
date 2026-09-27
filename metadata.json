@@ -1,0 +1,6 @@
+{
+  "name": "Internet Mission",
+  "description": "A gamified mobile-first web learning platform to master HTML, CSS, and JavaScript through practical missions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
