@@ -199,6 +199,7 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="hidden lg:inline">Profile</span>
           </button>
 
+          {/* Always-visible 💬 Community Button */}
           <button
             onClick={() => {
               sound.playClick();
@@ -208,11 +209,14 @@ export const Header: React.FC<HeaderProps> = ({
                 onOpenSettings();
               }
             }}
-            className="px-2.5 py-1 rounded-lg flex items-center gap-1 text-slate-400 hover:text-cyan-300 transition-all cursor-pointer shrink-0"
-            title="Internet Mission Community & Support"
+            className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-gradient-to-r from-cyan-950 via-slate-900 to-indigo-950 hover:from-cyan-900 hover:to-indigo-900 text-cyan-300 hover:text-white border border-cyan-500/60 shadow-[0_0_12px_rgba(6,182,212,0.3)] transition-all font-display font-bold text-xs uppercase cursor-pointer shrink-0"
+            title="Open Live Community (Chat & Active Learners)"
           >
-            <Users className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="hidden lg:inline">Community</span>
+            <span className="text-sm leading-none drop-shadow">💬</span>
+            <span className="hidden xs:inline sm:inline">Community</span>
+            <span className="inline-flex items-center gap-1 text-[10px] text-emerald-400 font-mono">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+            </span>
           </button>
         </div>
 
